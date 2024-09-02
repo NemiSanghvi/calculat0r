@@ -1,0 +1,79 @@
+.canvas {
+  background: rgba(97, 91, 33, 0.707);
+  margin: 50px 5px 5px 50px;
+  padding: 5px;
+  align-self: center;
+  border: 5px black solid;
+  height: 600px;
+  width: 400px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  justify-items: center;
+  align-items: center;
+}
+.output {
+  grid-column: 1 / -1;
+  background-color: #c9bba2;
+  min-height: 50px;
+  min-width: 360px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-around;
+  padding: 0.75rem;
+  word-wrap: break-word;
+  word-break: break-all;
+}
+/* .output {
+  height: 50px;
+  min-width: 360px;
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+  justify-content: space-around;
+  margin: 5px;
+  padding: 0.75rem;
+  font-size: 24px;
+  border-radius: 5px;
+  word-wrap: break-word;
+  word-break: break-all;
+} */
+
+.output .previous-operand {
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 1.5rem;
+}
+
+.output .current-operand {
+  color: white;
+  font-size: 2.5rem;
+}
+
+button {
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  background-color: black;
+  color: white;
+  border: 3px solid rgb(143, 79, 79);
+}
+
+button:hover {
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  background-color: rgb(201, 187, 162, 0.8);
+  color: black;
+  border: 3px solid rgb(143, 79, 79);
+}
+
+.output .previous-operand {
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 1.5rem;
+}
+
+.output .current-operand {
+  color: rgb(255, 255, 255);
+  font-size: 2.5rem;
+}
